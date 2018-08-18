@@ -1,0 +1,1 @@
+# Interiors design_adaptive
