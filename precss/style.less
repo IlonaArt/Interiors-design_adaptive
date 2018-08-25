@@ -22,7 +22,7 @@
 @font-face {
 	font-family: "Raleway";
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 500;
 	src: local("Raleway semibold"),
 	url("../fonts/raleway-semibold-webfont.woff2") format("woff2");
 }
@@ -33,10 +33,16 @@
 	src: local("Raleway extrabold"),
 	url("../fonts/raleway-extrabold-webfont.woff2") format("woff2");
 }
-@color-body: #5e5e5e;
-@color-grey: #bbb;
+@text-grey: #5e5e5e;
+@color-body: #bbb;
 @phone-color: #252525;
+@second-block: #1a292f;
+@light-grey: #7d7d7d;
 @headline-color: #00203a;
+@color-white: #ffffff;
+@color-hover: #f8a25a;
+@light-orange: #efb172;
+@color-copyright: #ffc487;
 
 body {
 	margin: 0;
@@ -45,8 +51,8 @@ body {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 25px;
-	color:@color-body;
-	background-color: @color-grey;       /* #fdfaf3 */
+	color:@text-grey;
+	background-color: @color-body;       /* #fdfaf3 */
 }
 html {
 	box-sizing: border-box;
@@ -85,6 +91,10 @@ h2 {
 a {
 	cursor: pointer;
 	text-decoration: none;
+	color: @light-grey;
+	font-family: "Raleway";
+	font-size: 18px;
+	line-height: 30px;
 }
 .submit-orange {
 	cursor: pointer;
@@ -92,6 +102,11 @@ a {
 .intro-text,
 .phone-number {
 	font-family: "Muller";
+}
+.intro-text {
+	color: @color-white;
+	font-size: 14px;
+	line-height: 20px;
 }
 .phone-number {
 	color: @phone-color;
@@ -102,8 +117,92 @@ a {
 .navigation-list {
 	display: none;
 }
+h1 {
+	font-family: "PlayfairDisplay"; 
+	font-size: 60px;
+	color: @color-white;
+}
+.button-hover,
+.submit-orange {
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 16px; 
+	color: @color-white;
+	text-transform: uppercase;
+}
+.service-column {
+	.button-hover {
+		color: @headline-color; 
+	}
+}
 .headline {
 	font-family: "PlayfairDisplay"; 
 	color: @headline-color;
 	font-size: 45px;
+}
+.features-list {
+	.feature-item {
+		.feature-headline {
+			font-family: "Raleway";
+			font-weight: 500;
+			font-size: 22px;
+			color: @second-block;
+		}
+	}
+}
+.current-ref,
+.services-ref.current,
+.service-column span {
+	color: @headline-color;
+}
+.service-headline {
+	font-family: "PlayfairDisplay"; 
+	font-weight: 400;
+	font-size: 30px;
+	color: @headline-color;
+}
+.service-column span,
+.service-text {
+	font-size: 18px;
+	line-height: 30px;
+}
+.video-text {
+	font-family: "Raleway";
+	font-size: 18px;
+	color: @color-white;
+}
+.steps-headline {
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 17px;
+	color: @phone-color;
+}
+.steps-number {
+	font-size: 12px;
+}
+.form-headline {
+	font-family: "PlayfairDisplay"; 
+	font-size: 45px;
+	color: @color-white;
+}
+.form-text,
+.user-text,
+.form-text2 {
+	font-size: 14px;
+	line-height: 20px;
+	color: @color-white;
+}
+.client-name {
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 30px;
+	color: @phone-color;
+}
+.feedbacks-name {
+	font-weight: 700;
+	color: @light-orange;
+}
+.sgn1,
+.sgn2 {
+	color: @color-copyright;
 }
