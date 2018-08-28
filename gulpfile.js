@@ -8,8 +8,7 @@ const gcmq = require('gulp-group-css-media-queries');
 const less = require('gulp-less');
 
 let cssFiles = [
-	'./precss/style.less',
-	'./precss/media.less'
+	'./precss/style.less'
 ];
 
 gulp.task('css', function(){
