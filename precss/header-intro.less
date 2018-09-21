@@ -1,32 +1,129 @@
 .main-header {
-	padding-top: 83px;
-}
-
-.main-header {
+    padding-top: 83px;
+    margin-bottom: 95px;
     .wrapper {
         position: relative;
+        .slider-box {
+            position: relative;
+            .main-bg {
+                position: absolute;
+                top: -83px;
+                left: -100px;
+            }
+        } 
+        .intro-column {
+            position: absolute;
+            max-width: 325px;
+            top: 170px;
+            left: 94px;
+            .intro-text {
+                margin-top: 26px;
+            }    
+            .button-hover {
+                margin-top: 35px;
+                padding: 20px 78px 17px 28px;
+                max-width: 278px;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    background-image: url(../img/Arrow-OutRight-icon.png);
+                    background-repeat: no-repeat;
+                    background-position-x: 18px;
+                    background-position-y: 2px;
+                    height: 22px;
+                    width: 100px;
+                }
+            }   
+        }
+        .menu-wrap {
+            position: absolute;
+            left: 2px;
+            top: -54px;
+            &:hover {
+                .navigation-wrap {
+                    display: block;                      
+                    background-image: url("../img/bg.png");
+                    position: absolute;
+                    top: 54px;
+                    left: 0;
+                    width: 1161px;
+                    height: 595px;
+                }
+            }    
+            .navigation-wrap {
+                display: none;
+                .navigation-list {
+                    margin: auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    align-items: center;
+                    height: 100%;
+                    padding-top: 110px;
+                    .navigation-item {
+                        margin-top: 12px;
+                        .navigation-ref {
+                            &:hover {
+                                color: @color-hover;
+                            }
+                            &:active {
+                                color: @color-white;
+                            }
+                        }
+                    }
+                }
+            } 
+        }        
+        .logo {
+            position: absolute;
+            top: -61px;
+            left: 51%;
+            transform: translateX(-50%);
+        }
+        .phone-wrap {
+            position: absolute;
+            top: -58px;
+            right: 4px;
+            &:hover {
+                span {
+                font-weight: 700;
+                }
+                svg {
+                    animation: phone-animation 1s infinite ease-in;
+                    @keyframes phone-animation {                      
+                        0% {
+                        transform: scale(2);
+                        } 
+                        50% { 
+                        transform: rotate(360deg);
+                        }
+                        100% {
+                        transform: scale(2);
+                        }               
+                    }
+                }
+            }
+        }
     }
+    .social-list {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        .social-ref {
+            display: block;
+        }
+    } 
 }
 
-.slider-button,
-.logo,
-.phone, {
-	display: none;
+.slider-buttons {
+    display: none;
 }
 
-.slider-box {
-	position: relative;
-}
 
-.main-bg {
-	position: absolute;
-	top: -83px;
-    left: -100px;
-}
 
-.intro-column {
-    position: absolute;
-    max-width: 325px;
-    top: 170px;
-    left: 190px;
-}
+
+
+
+
+

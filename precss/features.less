@@ -1,0 +1,35 @@
+.features {
+    margin-bottom: 112px;
+}
+
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    .feature-item {
+        max-width: 266px;
+        &:first-child {
+           margin-right: 15px;     
+        }
+        &:nth-child(even) {
+            margin-top: 210px;
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+            margin-right: 26px;
+        }
+        .feature-item-wrap {
+            .number {
+                display: block;
+                color: #fde3c9;
+                font-family: "PlayfairDisplay"; 
+                font-size: 85px;
+                margin-bottom: 40px;
+            }
+            .feature-headline {
+                display: block;
+                max-width: 280px;
+                margin-bottom: 12px;
+            }
+        }    
+    }
+}

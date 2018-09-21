@@ -4,6 +4,7 @@ body {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 25px;
+	letter-spacing: 1px;
 	color:@text-grey;
 	background-color: @color-body;       /* #fdfaf3 */
 }
@@ -29,7 +30,6 @@ html {
 .wrapper {
 	max-width: 1170px;
 	margin: 0 auto;
-	padding: 0 95px;
 }
 
 .slider-button,
@@ -54,26 +54,15 @@ a {
 
 .phone-number {
 	font-family: "Muller";
+	color: @phone-color;
+	font-size: 14px;
+	letter-spacing: 1.5px;
 }
 
 .intro-text {
 	color: @color-white;
 	font-size: 14px;
 	line-height: 20px;
-	margin-top: 26px;
-	letter-spacing: 1px;
-}
-
-.phone-number {
-	color: @phone-color;
-}
-
-.logo {
-	font-size: 0;
-}
-
-.navigation-list {
-	display: none;
 }
 
 h1 {
@@ -81,7 +70,7 @@ h1 {
 	font-size: 63px;
 	line-height: 58px;
 	color: @color-white;
-	letter-spacing: 2px;
+	letter-spacing: 1.5px;
 }
 
 .button-hover,
@@ -94,35 +83,28 @@ h1 {
 	text-transform: uppercase;
 }
 
-.intro-column {
-	.button-hover {
-		margin-top: 35px;
-		border: 2px solid white;
-		padding: 20px 78px 17px 28px;
-		max-width: 278px;
-		letter-spacing: 1px;
-		position: relative;
-		&::after {
-			content: "";
-			position: absolute;
-			background: url("../img/Arrow-OutRight-icon.png") 0 no-repeat;
-			height: 22px;
-			width: 40px;
-		}
-	}
-	
-}
-
-.service-column {
 .button-hover {
-		color: @headline-color; 
+	border: 2px solid #fff;		
+	&:hover {
+		background-color: @color-hover;
+		text-decoration: none;
+		color: #fff
 	}
-}
+	&:active {
+		background-color: @color-active;
+	}
+}	
 
 .headline {
 	font-family: "PlayfairDisplay"; 
 	color: @headline-color;
-	font-size: 45px;
+	font-size: 48px;
+}
+
+.navigation-ref {
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 42px;
 }
 
 .features-list {
