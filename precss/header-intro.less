@@ -1,15 +1,40 @@
 .main-header {
     padding-top: 83px;
-    margin-bottom: 95px;
+    margin-bottom: 216px;
+    display: flex;
+    justify-content: center;
     .wrapper {
         position: relative;
         .slider-box {
             position: relative;
+            .slider-wrap {
+                .main-slider {
+                    width: 100%;
+                }
+            }
             .main-bg {
                 position: absolute;
                 top: -83px;
                 left: -100px;
             }
+            .slider-buttons {
+                position: absolute;
+                right: 6px;
+                bottom: -47px;
+                .slider-button {
+                    border: none;
+                    height: 3px;
+                    width: 26px;
+                    margin-left: 7px;
+                    background-color: @toggle-color;
+                    &.current {
+                        background-color: @togglecur-color;
+                    }
+                    &:hover {
+                        background-color: @togglecur-color;
+                    }
+                }
+            }            
         } 
         .intro-column {
             position: absolute;
@@ -18,6 +43,7 @@
             left: 94px;
             .intro-text {
                 margin-top: 26px;
+                word-wrap: break-word;
             }    
             .button-hover {
                 margin-top: 35px;
@@ -40,15 +66,14 @@
             position: absolute;
             left: 2px;
             top: -54px;
-            &:hover {
-                .navigation-wrap {
-                    display: block;                      
-                    background-image: url("../img/bg.png");
-                    position: absolute;
-                    top: 54px;
-                    left: 0;
-                    width: 1161px;
-                    height: 595px;
+            .show-nav {
+                display: block;                      
+                background-image: url("../img/bg.png");
+                position: absolute;
+                top: 54px;
+                left: 0;
+                width: 1161px;
+                height: 595px;
                 }
             }    
             .navigation-wrap {
@@ -105,20 +130,31 @@
                 }
             }
         }
+    
+        .social-list {
+            display: flex;
+            position: absolute;
+            left: 0;
+            bottom: -56px;
+            .social-item {
+                margin-right: 36px;
+                &:hover {
+                    svg {
+                        transform: scale(1.6);
+                    }
+                }    
+                &:active {
+                    svg {
+                    opacity: .3;
+                    }
+                }
+                .social-ref {
+                    display: block;                
+                }
+            }    
+        } 
     }
-    .social-list {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        .social-ref {
-            display: block;
-        }
-    } 
-}
 
-.slider-buttons {
-    display: none;
-}
 
 
 
