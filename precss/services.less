@@ -1,3 +1,32 @@
+.services-wrap {
+    display: flex;
+    padding-top: 79px;
+}
+
+.services-nav {
+    display: flex;
+    flex-direction: column;
+    padding-right: 54px;
+    justify-content: space-between;
+    min-width: 284px;
+    margin-top: 10px;
+}
+
+.services-item {
+    line-height: 21px;
+    &.three {
+        max-width: 187px;
+    }
+    .services-ref {
+        line-height: 21px;
+        display: inline-block;
+        &.current {
+            padding-left: 34px;
+            line-height: 19px;
+        }
+    }    
+}
+
 .service-column {
     .button-white {
         max-width: 210px;

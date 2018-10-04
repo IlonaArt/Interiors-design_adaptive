@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="main-header">	
+	<header class="main-header centering">	
 		<div class="wrapper">
 			<div class="slider-box">
 				<div class="slider-wrap">
@@ -40,7 +40,7 @@
 					</ul>
 				</div>	
 			</div>					
-			<img class="logo" src="/img/logo.png" width="98" height="29" alt="Лого">
+			<img class="logo" src="./img/logo.png" width="98" height="29" alt="Лого">
 			<div class="phone-wrap">
 				<a href="#" class="phone-number">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="15"><image data-name="001-phone-receiver" width="12" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAPCAQAAAB66ObCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCBQXDDNyXwDPAAAArUlEQVQY013PP0tCcRjF8U9ehV/eoSTIwfDP0uAQd1Fa6xXo5Ov0PTS5h4OiREhBm5ERXLgu3up3z/TAl3Oec4CWmbZICTJTN4Llf1B3bQI6saNmcLoupTHYg8JKEke9KZz5MHeIHZ9+cCWvtiqc66rJvcQOnsCDRnVHjj6GFoIL3yXgVSZoytx5VLcpQWFtjCBFV2Jbdj9YGv0+6Hn+G/Vl4VaKd3M7FfXdC3AElwUh3VtmD7gAAAAASUVORK5CYII=" opacity=".5"/></svg>
@@ -69,7 +69,7 @@
 			</ul>	
 		</div>			
 	</header>	
-	<section class="features">
+	<section class="features centering">
 		<h2 class="visually-hidden">Преимущества</h2>
 		<div class="wrapper">
 			<ul class="features-list">
@@ -104,7 +104,7 @@
 			</ul>	
 		</div>	
 	</section>	
-	<section class="portfolio">
+	<section class="portfolio centering">
 		<div class="wrapper">	
 			<h3 class="headline">Портфолио</h3>
 			<ul class="portfolio-nav">
@@ -119,44 +119,87 @@
 				</li>		
 			</ul>
 			<div class="projects-slider">
-				<button class="button-arrow" type="button">Листать назад</button>
-				<img class="projects-photo" src="" width="" height="" alt="Дизайн интерьера гостиной">
-				<img class="projects-photo" src="" width="" height="" alt="Дизайн столовой в стиле «Бохо»">
-				<img class="projects-photo" src="" width="" height="" alt="Лофт интерьер для отеля Hiloft">
-				<button class="button-arrow" type="button">Листать вперед</button>
+				<div class="projects-photo one">
+					<img src="./img/design1.jpg" width="258" height="552" alt="Дизайн интерьера гостиной">
+					<div class="overlay">	
+						<img src="./img/project-bg.png" width="258" height="552" alt="Фон">
+					</div>
+					<p class="design">Дизайн интерьера гостиной</p>
+					<p class="rotate">Дизайн интерьера</p>
+					<button class="arrow left"><span class="visually-hidden">Листать назад</span></button>	
+					<a class="plus" href="#" title="Подробнее">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="130" height="130"><image data-name="plus (1)" width="130" height="130" xlink:href="data:img/png;base64,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"/></svg>
+					</a>
+				</div>
+				<div class="projects-photo two">
+					<img src="./img/768/portfolio_main.jpg" width="258" height="552" alt="Дизайн интерьера гостиной-студии">
+					<div class="overlay">	
+						<img src="./img/project-bg.png" width="258" height="552" alt="Фон">
+					</div>
+					<p class="design second">Дизайн интерьера гостиной</p>
+					<p class="rotate">Дизайн интерьера</p>
+					<a class="plus" href="#" title="Подробнее">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="130" height="130"><image data-name="plus (1)" width="130" height="130" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAACCCAMAAAC93eDPAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACylBMVEUAAQb+vIAAAQYAAQYAAQYAAQYAAQYAAQYAAQYAAQbWn23vsXn2tnz5uH77un/9u4D9u4D+vID+vID+vID9u4D9u4D8u3/0tXvsr3fLl2gAAQbOmWnztHv5uH79u4D5uH7vsXnCkGO0hl31tXz7un/+vID+vIDxsnqsgFngpnL+vID4uH3YoG7jqHP7un/6uX7bom/UnWz7un/4uH3DkWRdRTL1tXzxsnpJNynaom/9u4D7un/Ml2gAAQbztHv+vID9u4Dsr3dNOSv5uH72tnw3KSCHZUf7un/4uH1rTzmwg1v7un/6uX6WcE78u3+ac1AAAQatgVn7un/6uX6SbUz7un/4uH0zJh70tXvqrXbbom/+vID9u4DFkmX8u3/6uX4wJB3ztHvusHgAAQbEkWT9u4Cpflf5uH72tnzjqHPRm2r7un/4uH0AAQbip3POmWn2tnz9u4CQa0vqrXb6uX7Klmf+1a///Pn+2bepflfys3r+2Lb+3b7prXb6uX7+1rL+2rr3t30AAQb9u4DPmmq5iV/ip3P0tXvvsXn4uH31tXz5uH78u3/8u38AAQb9u4D9u4D+z6T+1K7+17L/5tD/6dX9u4D+27r/69n9u4D+1K38u3/6uX7ys3rtsHjnq3XdpHDKlmeyhFz8u38AAQb4uH31tXztsHjnq3W0hl2heFT5uH7prXaCYUXSnGvFkmX3t33UnWzHlGb1tXycdFHorHX5uH4mHRjBj2O5iV/orHXjqHP0tXvxsnotIhz4uH33t32IZUj5uH57W0H6uX5/X0OHZUd8XEFZQjH3t332tnxSPS0rIRskGxflqnTjqHMAAQa9jGH6uX62h14zJh7sr3fqrXYuIxytgVn1tXyle1XLl2jIlGbIlGb9u4DztHvBj2OKZ0mCYUWjeVT1tXzlqnSugVrdpHD5uH76uX75uH7tsHj///8AAACCjO4xAAAA7HRSTlMAAAECAwQFBgcIJFJ5nLnM3uby7OLTx3pTJgkeXJnWml4gF2q88PFsGDDpmzI2rK44Ip+hJQpxcw0owMEsClvn6F4JjI8NDqepEha4uRrGGwsVwMEZqq4Oj2Eq6OkvwsMPam0MHeQinp81O62wDTM4nuocb70g9/73JWT3+Gem9/ioDtwpLlZ7fp2eus7PD9/n9vf3+vvh+PvV9sm4fH9UWCov3RCnqWZoJCe+cR83PLE5PqElcMMTLzFiZJCSEK2wG8IdxyAcHxaqqxgRFGJjETDCMhN3eBUqoyw+PzrrnzwfISioaS5Zu8+8gPGv/1kAAAABYktHRO1WvoONAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gkeDjcaTXUmsAAAB1xJREFUeNrF2/eb1EQYB3AEvMuqhzpYMCIonqti7zWC2BusYvcUZAVRiQIiYgUX653mVESsWBgVPQuWAxuKir1hF7uCIHp/hJvNJPNOSybJ3N78dsvzZD583zfZTTLTq1fG0VsYWY9kZPK6QnprjbrO36c26qSQTc2PblUkTy9jdAsAzNWXG1KGaYBydonDJIIHRLOtzw2eYQrBARSzCw5zCBkgnKxBGAzDEIIBgP9/OGcjGIwDRJHPIADo/I2KwSkgIv386wkRcPNbwuAUESJrECoAmL7ADMCAiOxBAAEAkOk32HCjpn4bb7Ip6r/Z5lv0a9pywFY2dBAFRGQwsBFQgGVtPXCbQUgYgwZvu51t2xGDQYAgsghIBAQwZPvmHZBiFJt33MkmDIhgg8gkoICdBw9FsWPoLrvaRMEh0hpEgQ/YbfciShzFPfbkEVkMkSAoQhDBXntrAGqIffaliDAIUgxdAxSEEey3/1A9QK0cBxzIIaIg9AwywUEH6wP8ccihDkFkMUgE1mHD0gkQGn6444AgUhlYQa0NRhyRFuCPI4+CQYQNoWMQBUcfk0WA0LHHhUHIDNqCah2PPyGbAKETT4KGRk0DuB4QwZCRWQUIjRxVihCRoU+8ATQC6cSTT8kuQGj0qdBAejK+HYQyjDgtjwCh08/gDQmlEARWpnMBjjNL6QywDDXBwLwChM6KDJYF2kFBEARnn5Of0HJuGgNThqpgxHn5BQiNGUsM5PoAS5EYwvkmBAiNK1NDQgy84ILxZgjjJ6gN0hCiMlgXmhEgNLEcGWApxBj4EC7S/IWSPIoX1wyJMfAhFC4xJUBokssaFDGwIVjWpcZCqMZwmQtLoYhBCKHJnAChyTox8CEMSfFTMXlMmeobEmKABD8EQ9eEcFzuhqWgMXAEPoRCs1nCNJeWQhEDH8IVWs04/coZmoTiVYkx0GYMQrha68DXdF2rG8N1QgxRQ0rrUChcr3XcmV2zdAk3VIIYyEkhVoKvgz3bNGF2xQUnhaQSYR3CZrxR77gpCOgmEANoSAWhUBhgnnAzjQFWIiQIdbjFPOHWSgU0pFAJSgjqYN9mntBaESohEmgr2Jo3UGkIbRVQCbEZAMGvQ8G+3TzhDo9WAl6dKIFpBbvdPKHdYyrBNIOMcKfeYe/qulubMFwgNACC0I12zKGmz5kZjXu65tI/5kyPN3hiM9B+FLrR7q8+Upd6JBBIM0j7kb8w2fa96iPNmDcrGnO77qN/zIv/1hzucf2oIgQnhH2/bi88oN0L7R5oBuGU4AjVdnlQ77DpTkrFKaEgPGSe0JZEYM/JbrlAe3EXBpHwsHnC/JSER8wTHvWiC4MW4THzhMdTEhzjP9wW4JSFcJ4wTXgykcCdlM5TpgkLccrrgvO01q2M/n1E8RkvDaFqcErTdA6sfzfVgT3dC3RDSBinm7DeeJYQNL6myJe144wye3P/HCXEfFnDnyyOU5psktCKsRf7k0V2VpaeN/mg5wUsOSEaYn87VgmlSeYIizD2vMSfr8IpUXrR3EO/l7DYjY3K+wjaDOWJpggvY3kriATYj34ME0w9AH5FrIPiho5vhvI4M4ROzNVB+oBBcnGqVmLsGBOCxUuEOhQSny9EMbzakl/Q8hpW1EFGYCtRjaH8en7CG5gPIe5BD1OJWgzum3kFS7EYgvRxl/DQjxDKb72dT7BsCRNCzEM/oRJBQ1ZjeGd0HsG773EhJD76FBuy7E5dnl2w/H0oSHgArI7B/aAtq6DtQ6wfgiIG/6Rw3Y8+zib45FPMhqDxMoB5JUJL4X6W6bxY+jmWlSHmzZAiBr8UlcoXqa9RLV+uoAJahrgXQ7ExVCpffZ1OsPgbzAp0Xo8JLwlZw7ffTdEHTPn+h0ggKYPyXanwqjQqRc3g/bhSd2nVyp9WSAQar0oVMUSGivfzMh3Bol8IgK2Czgtj8bW5YPB+bU0ox2+//wEAiQLpq/s+TCkEg/dnZ4eyHsWOzr8wjhMkLR4QY6i1A2fwvFULVy8Q51+w+u9VmAFwgozLOFhDhMB4zdr5rf+sa69eLlra1/3b+t/aNRjLAGkFkuU0BcEQIDysHF4I4ASZl/RAA4vw1PNTQGqBZGkVMARBQASEgI8IoBZB6qVVkgVmrCFCQAUzKhTACfQWmMmW2VkqhMggH0sAKZbZyRYbUgNAhAphuBCQabGhbMllaAiC8BGBwpVO78/vA0gEGZZcShee+ovfaRA1BFHwo0wBmReeypffgiCAgnWQj8j8eZbfqg0BIowiYoARfB7On30RsmIpNosgCkIBfzgSQPql2KoF6QBRUzAOMns4f94F6cpl+RARMuCI/in/snz15oRgZ4gdO8xsTojbokH2p6inN7RFI2GjSrRNhpvc6EaV+O06lnq7jmVuuw67b6svRNRt05IkiHpv3eKD6JkNbLHb+Bokoxu28SkQdd3MKEHUf0unDFH3ja0Moqe297KIHtrkzCN6ZKu3RAEokn/ojvmVirrOr8Xo9unjIFmP9D/Elqb63i7SxAAAAABJRU5ErkJggg=="/></svg>
+					</a>
+				</div>
+				<div class="projects-photo three">
+					<img src="./img/design3.jpg" width="258" height="552" alt="Дизайн столовой в стиле «Бохо»">
+					<div class="overlay">	
+						<img src="./img/project-bg.png" width="258" height="552" alt="Фон">
+					</div>
+					<p class="design">Дизайн столовой в стиле «Бохо»</p>
+					<p class="rotate">Дизайн интерьера</p>
+					<a class="plus" href="#" title="Подробнее">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="130" height="130"><image data-name="plus (1)" width="130" height="130" xlink:href="data:img/png;base64,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"/></svg>
+					</a>
+				</div>
+				<div class="projects-photo four">
+					<img src="./img/design4.jpg" width="258" height="552" alt="Лофт интерьер для отеля Hiloft">
+					<div class="overlay">	
+						<img src="./img/project-bg.png" width="258" height="552" alt="Фон">
+					</div>
+					<p class="design">Лофт интерьер для отеля Hiloft</p>
+					<p class="rotate">Дизайн интерьера</p>
+					<button class="arrow right"><span class="visually-hidden">Листать вперед</span></button>
+					<a class="plus" href="#" title="Подробнее">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="130" height="130"><image data-name="plus (1)" width="130" height="130" xlink:href="data:img/png;base64,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"/></svg>
+					</a>
+				</div>
 			</div>
 		</div>	
 	</section>
-	<section class="services">
+	<section class="services centering">
 		<div class="wrapper">
 			<h4 class="headline">Наши услуги</h4>
-			<ul class="services-nav">
-				<li class="services-item">
-					<a href="#" class="services-ref">Дизайн жилого помещения</a>
-				</li>
-				<li class="services-item">
-					<a href="#" class="services-ref">Дизайн отельных комнат</a>
-				</li>
-				<li class="services-item">
-					<a href="#" class="services-ref current">Дизайн коммерческих объектов</a>
-					<div class="service-column">
-						<img class="services-photo" width="" height="" src="" alt="Дизайн коммерческих объектов">
-						<p class="service-headline">Дизайн коммерческих объектов</p>
-						<span>532 объекта</span>
-						<p class="service-text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
-						<a href="#" class="button-white button-hover">консультация</a>
-					</div>
-				</li>
-				<li class="services-item">
-					<a href="#" class="services-ref">Ремонт под ключ</a>
-				</li>
-				<li class="services-item">
-					<a href="#" class="services-ref">Отделочные работы</a>
-				</li>
-				<li class="services-item">
-					<a href="#" class="services-ref">Выезд дизайнера на дом</a>
-				</li>
-			</ul>
+			<div class="services-wrap">
+				<ul class="services-nav">
+					<li class="services-item">
+						<a href="#" class="services-ref">Дизайн жилого помещения</a>
+					</li>
+					<li class="services-item">
+						<a href="#" class="services-ref">Дизайн отельных комнат</a>
+					</li>
+					<li class="services-item three">
+						<a href="#" class="services-ref current">Дизайн коммерческих объектов</a>
+					</li>
+					<li class="services-item">
+						<a href="#" class="services-ref">Ремонт под ключ</a>
+					</li>
+					<li class="services-item">
+						<a href="#" class="services-ref">Отделочные работы</a>
+					</li>
+					<li class="services-item">
+						<a href="#" class="services-ref">Выезд дизайнера на дом</a>
+					</li>
+				</ul>
+				<div class="service-column">
+					<img class="services-photo" width="878" height="390" src="./img/service.jpg" alt="Дизайн коммерческих объектов">
+					<p class="service-headline">Дизайн коммерческих объектов</p>
+					<p class="service-text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
+					<span>532 объекта</span>
+					<a href="#" class="button-white button-hover">консультация</a>
+				</div>
+			</div>	
 		</div>
 	</section>
 	<div class="video-box">

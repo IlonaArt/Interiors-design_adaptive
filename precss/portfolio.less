@@ -1,19 +1,126 @@
 .portfolio {
-    .wrapper {
-        .headline {
-            margin-bottom: 66px;
-        }
-        .portfolio-nav {
-            display: flex;
-            flex-wrap: wrap;
-            .portfolio-item {
-                margin-right: 45px;
-                .current-ref {
-                    font-weight: 600;
-                    border-bottom: 1px solid #000;
-                    padding-bottom: 10px;
-                }
-            }  
+    margin-bottom: 136px;
+}
+
+.portfolio-nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 64px;
+    padding-bottom: 54px;
+}
+
+.portfolio-item {
+    margin-right: 56px;
+    .ref {
+        letter-spacing: 0;
+    &:hover {
+        color: @headline-color;
+        font-weight: 600;
         } 
+    &:active {
+        border-bottom: 1px solid #000;
+        padding-bottom: 10px;
+        }       
+    }
+    .current-ref {
+        font-weight: 600;
+        border-bottom: 1px solid #000;
+        padding-bottom: 10px;
+        letter-spacing: 0;
+    }
+}   
+ 
+.projects-slider {
+    display: flex;
+}
+
+.projects-photo {
+    position: relative;
+    width: 25%;
+    height: 552px;
+    &:hover {
+        width: 40%;
+        .overlay,
+        .design,
+        .rotate {
+            display: none;
+        }
+        .arrow {
+            filter: invert(100%);
+            transform: scale(1);
+        }    
+        a {
+            display: block;
+            position: absolute;
+            top: 54%;
+            left: 52%;
+            transform: translate(-50%, -50%);
+        }
+    } 
+    &:active {
+        svg {
+            opacity: 0.5;
+        }
+        img {
+            opacity: 0.8;
+        }
+    }   
+    img {
+        width: 100%;
     }    
+    .overlay {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.8;
+        z-index: 5;
+    }
+    a {
+        display: none;
+    }
+}
+
+.design {
+    position: absolute;
+    top: 0;
+    left: 20;
+    color: @color-white;
+    font-weight: 500;
+    line-height: 22px;
+    padding-left: 28px;
+    padding-top: 26px;
+    max-width: 180px;
+    z-index: 10;
+}
+
+.rotate {
+    position: absolute;
+    bottom: 31px;
+    left: 18px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 0.875em; 
+    color: @color-white;  
+    z-index: 10; 
+}
+
+.arrow {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    width: 38px;
+    height: 12px;
+    top: 247px;
+    z-index: 10;
+}
+
+.arrow.left {
+    background-image: url(../img/arrow2.png);
+    left: 32px;
+}    
+
+.arrow.right {
+    background-image: url(../img/arrow1.png);
+    right: 32px;
 }    
