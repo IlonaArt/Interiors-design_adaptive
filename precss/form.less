@@ -1,5 +1,66 @@
-.main-form {
-    .submit-orange {
-    background-color: transparent;
+.form {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1360px;   
+    .form-column1,
+    .form-column2 {
+        width: 50%;
     }
-}    
+}
+
+.form-column1 {
+    background-color: @color-overlay;
+    padding: 70px 84px 84px 107px;
+    max-height: 683px;
+}
+
+.form-text {
+    max-width: 428px;
+    padding-top: 22px;
+} 
+
+.main-form {
+    max-width: 474px;    
+    .user-text {
+        width: 100%;
+        display: block;
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid @color-form; 
+        padding-top: 30px;
+        padding-bottom: 12px;
+        letter-spacing: 1px;
+        &.name {
+            background: url("../img/name.png") no-repeat 100% 73%;
+        }
+        &.phone {
+            background: url("../img/phone.png") no-repeat 100% 73%;
+        }
+        &.email {
+            background: url("../img/mail.png") no-repeat 100% 73%;
+        }
+    }
+    .submit-orange {
+        background-color: transparent;
+        width: 100%;
+        letter-spacing: 2px;
+        padding: 22px 0;
+        border-radius: 5px;
+        margin-top: 42px;
+        margin-bottom: 22px;
+        &:hover {
+            background-color: @color-hover;
+            border: 2px solid @color-hover;
+        &:active {
+            background-color: @color-active;
+        }
+        }
+    }
+}  
+
+.form-headline {
+    max-width: 498px;
+    display: block;
+}
