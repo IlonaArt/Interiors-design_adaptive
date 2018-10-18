@@ -1,5 +1,43 @@
 .feedbacks {
-    .wrapper {
-        position: relative;
-    }    
+    margin-bottom: 158px;  
+    .headline {
+        display: block;
+        margin-bottom: 97px;
+        margin-left: 97px;
+    }
+}
+
+.slider-box2 {
+    display: flex;
+    flex-wrap: wrap;
+    .slick-track {
+        min-height: 354px;
+        .slider-item {
+            position: relative;
+        &.slick-current,
+        &.slick-active {
+            max-width: 795px;
+            padding: 52px 144px 52px 70px;
+            background-color: #fff;
+            margin-left: 87px;
+            margin-right: 87px;
+                .feedbacks-text {
+                    max-width: 448px;
+                    padding-top: 22px;
+                    letter-spacing: 0;
+                }
+                .slider-image {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: -152px;
+                }
+            }
+            .client-name,
+            .feedbacks-name,
+            .feedbacks-text {
+                display: none;
+            }
+        }   
+    }   
 }

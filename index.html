@@ -4,23 +4,29 @@
 	<meta charset="UTF-8">
 	<title>Interiors design</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main-header centering">	
 		<div class="wrapper">
-			<div class="slider-box">
+			<div class="slider-box1">
 				<div class="slider-wrap">
 					<img class="main-slider" src="img/photo1.jpg" width="1163" height="595" alt="Фото1">
 				</div>
-				<img class="main-bg" src="img/bg1.png" width="679" height="769" alt="Фон1">
-				<div class="slider-buttons">
-					<button class="slider-button current" type="button">Переключатель слайдера1</button>
-					<button class="slider-button" type="button">Переключатель слайдера2</button>
-					<button class="slider-button" type="button">Переключатель слайдера3</button>
-					<button class="slider-button" type="button">Переключатель слайдера4</button>
-				</div>	
-			</div>			
+				<div class="slider-wrap">
+					<img class="main-slider" src="img/photo1.jpg" width="1163" height="595" alt="Фото1">
+				</div>
+				<div class="slider-wrap">
+					<img class="main-slider" src="img/photo1.jpg" width="1163" height="595" alt="Фото1">
+				</div>
+				<div class="slider-wrap">
+					<img class="main-slider" src="img/photo1.jpg" width="1163" height="595" alt="Фото1">
+				</div>
+			</div>
+			<img class="main-bg" src="img/bg1.png" width="679" height="769" alt="Фон1">
+			<img class="logo" src="./img/logo.png" width="98" height="29" alt="Лого">			
 			<div class="intro-column">
 				<h1>Дизайн интерьеров</h1>
 				<p class="intro-text">Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.</p>
@@ -39,8 +45,7 @@
 						<li class="navigation-item"><a class="navigation-ref" href="#">контакты</a></li>
 					</ul>
 				</div>	
-			</div>					
-			<img class="logo" src="./img/logo.png" width="98" height="29" alt="Лого">
+			</div>				
 			<div class="phone-wrap">
 				<a href="#" class="phone-number">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="15"><image data-name="001-phone-receiver" width="12" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAPCAQAAAB66ObCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCBQXDDNyXwDPAAAArUlEQVQY013PP0tCcRjF8U9ehV/eoSTIwfDP0uAQd1Fa6xXo5Ov0PTS5h4OiREhBm5ERXLgu3up3z/TAl3Oec4CWmbZICTJTN4Llf1B3bQI6saNmcLoupTHYg8JKEke9KZz5MHeIHZ9+cCWvtiqc66rJvcQOnsCDRnVHjj6GFoIL3yXgVSZoytx5VLcpQWFtjCBFV2Jbdj9YGv0+6Hn+G/Vl4VaKd3M7FfXdC3AElwUh3VtmD7gAAAAASUVORK5CYII=" opacity=".5"/></svg>
@@ -299,25 +304,27 @@
 		</div>			
 	</section>
 	<section class="feedbacks">
-		<div class="wrapper">
-			<b class="headline">Отзывы наших клиентов</b>
-			<div class="slider-box2">
-				<img class="prev" src="" width="" height="" alt="Отзыв1">
-				<div class="current-slider">
-					<p class="client-name">Александра Холодная</p>
-					<b class="feedbacks-name">Услуга: интерьер детской</b>
-					<p class="feedbacks-text">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все, как мы и хотели. В следующий раз обратимся к BRUME!</p>
-					<img class="current" src="" width="" height="" alt="Отзыв2">
-				</div>
-				<img class="next" src="" width="" height="" alt="Отзыв3">
+		<b class="headline">Отзывы наших клиентов</b>
+		<div class="slider-box2">
+			<div class="slider-item one">
+				<p class="client-name">Александра Холодная</p>
+				<b class="feedbacks-name">Услуга: интерьер детской</b>
+				<p class="feedbacks-text">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все, как мы и хотели. В следующий раз обратимся к BRUME!</p>
+				<img class="slider-image" src="./img/feedback2.png" width="247" height="224" alt="Отзыв1">				
 			</div>
-			<div class="slider-buttons">
-				<button class="slider-button current" type="button">Переключатель слайдера1</button>
-				<button class="slider-button" type="button">Переключатель слайдера2</button>
-				<button class="slider-button" type="button">Переключатель слайдера3</button>
-				<button class="slider-button" type="button">Переключатель слайдера4</button>
+			<div class="slider-item two">
+				<p class="client-name">Кирилл Кириллов</p>
+				<b class="feedbacks-name">Услуга: интерьер гостиной</b>
+				<p class="feedbacks-text">Всегда мечтал окружить себя таким интерьером, чтобы мог сказать: "Ребят, заходите в гости, найдите 5 отличий от "ЭТАЖЕЙ"". Очень круто и атмосферно получилось.</p>
+				<img class="slider-image" src="./img/feedback1.jpg" width="201" height="192" alt="Отзыв2">
 			</div>
-		</div>	
+			<div class="slider-item three">
+				<p class="client-name">Мария Винная</p>
+				<b class="feedbacks-name">Услуга: интерьер кухни</b>
+				<p class="feedbacks-text">После переезда наша кухня была больше похожа на бомбоубежище, но благодаря слаженной работе команды BRUME получилось её превратить в наипрекраснейшее место, которое я когда-либо видела. И готовить, и трапезничать в ней - большое удовольствие. Спасибо, BRUME!</p>
+				<img class="slider-image" src="./img/feedback3.jpg" width="201" height="192" alt="Отзыв3">
+			</div>
+		</div>
 	</section>
 	<footer class="main-footer">
 		<div class="wrapper">
@@ -346,6 +353,10 @@
 			<p class="sgn2">HolodnayaDesign</p>
 		</div>	
 	</footer>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick/slick.min.js"></script>
+  
 	<script src="js/script.js"></script>	
 </body>
 </html>

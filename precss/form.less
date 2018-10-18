@@ -1,23 +1,37 @@
 .form {
     display: flex;
-    margin: 0 auto;
-    max-width: 1360px;   
-    .form-column1,
-    .form-column2 {
-        width: 50%;
-    }
+    margin-bottom: 150px;  
+}
+
+.form-column1,
+.form-column2 {
+    width: 50%;
 }
 
 .form-column1 {
     background-color: @color-overlay;
     padding: 70px 84px 84px 107px;
     max-height: 683px;
+    .form-wrap {
+        margin: 0 auto;
+        max-width: 480px;
+    }
+}
+
+.form-column2 {
+    img {
+        width: 100%;
+    }
 }
 
 .form-text {
     max-width: 428px;
     padding-top: 22px;
 } 
+
+.form-text2 {
+    max-width: 500px;
+}
 
 .main-form {
     max-width: 474px;    
@@ -53,9 +67,9 @@
         &:hover {
             background-color: @color-hover;
             border: 2px solid @color-hover;
+        }    
         &:active {
             background-color: @color-active;
-        }
         }
     }
 }  
@@ -63,4 +77,5 @@
 .form-headline {
     max-width: 498px;
     display: block;
+    margin: 0 auto;
 }
