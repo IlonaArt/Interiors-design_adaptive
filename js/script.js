@@ -8,6 +8,9 @@ menu.addEventListener("click", function (evt) {
 
 $(document).ready(function(){
   $('.slider-box2').slick({
+    centerMode: true,
+    variableWidth: true,
+    centerPadding: '290px',
     arrows: false,
     dots: true,
     responsive: [{
@@ -21,14 +24,6 @@ $(document).ready(function(){
   });
   $('.slider-box1').slick({
     arrows: false,
-    dots: true,
-    responsive: [{
-      breakpoint:2000,
-      settings: "slick"
-    },
-    {
-      breakpoint:4000,
-      settings: "unslick"
-    }]
+    dots: true
   });
 });

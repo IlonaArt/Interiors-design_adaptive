@@ -8,36 +8,86 @@
 }
 
 .slider-box2 {
-    display: flex;
-    flex-wrap: wrap;
+    margin: 0;
+    .slick-dots {
+        bottom: -86px;
+        right: 50%;
+        width: 160px;
+        &:hover {
+            cursor: pointer;
+        }
+        li {
+            width: 26px;
+            height: 3px;
+            margin: 0 0 0 12px;
+            padding: 40px 0;
+            button {
+                width: 26px;
+                height: 3px;
+                padding: 0;
+                background: @toggle-color;
+                &::before {
+                    content: '';
+                    width: 26px;
+                    height: 3px;
+                }
+            }
+            &.slick-active {
+                button {
+                   background: @togglecur-color;
+                }
+            }        
+        }
+    }
     .slick-track {
-        min-height: 354px;
+        display: flex;
+        align-items: center;
         .slider-item {
-            position: relative;
-        &.slick-current,
-        &.slick-active {
-            max-width: 795px;
-            padding: 52px 144px 52px 70px;
-            background-color: #fff;
-            margin-left: 87px;
-            margin-right: 87px;
+            &:not(.slick-current) {
+                .client-name,
+                .feedbacks-name,
                 .feedbacks-text {
-                    max-width: 448px;
-                    padding-top: 22px;
-                    letter-spacing: 0;
+                    display: none;
                 }
-                .slider-image {
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    right: -152px;
+                .slider-item-wrapper {
+                    position: relative;
+                    &::before,
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        top: 0;
+                        right: 0;
+                        width: 201px;
+                        height: 192px;
+                        background-color: @color-overlay;
+                        opacity: 0.5;
+                        z-index: 10;
+                    }
                 }
             }
-            .client-name,
-            .feedbacks-name,
-            .feedbacks-text {
-                display: none;
-            }
-        }   
-    }   
+            &.slick-current {
+                .slider-item-wrapper {
+                    position: relative;
+                    max-width: 795px;
+                    padding: 52px 144px 52px 70px;
+                    background-color: #fff;
+                    margin-left: 87px;
+                    margin-right: 218px;
+                    height: 354px;
+                    .feedbacks-text {
+                        max-width: 448px;
+                        padding-top: 22px;
+                        letter-spacing: 0;
+                    }
+                    .slider-image {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: -152px;
+                    }
+                }
+            }          
+        } 
+    }  
 }
+
