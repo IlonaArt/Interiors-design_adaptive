@@ -22,8 +22,12 @@ $(document).ready(function(){
       settings: "unslick"
     }]
   });
-  $('.slider-box1').slick({
+  /*$('.slider-box1').slick({
     arrows: false,
-    dots: true
-  });
+    dots: true,
+    responsive: [{
+      breakpoint:768,
+      settings: "unslick"
+    }]  
+  });*/
 });
