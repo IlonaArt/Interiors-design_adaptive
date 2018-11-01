@@ -5,6 +5,7 @@
     
     .main-header {
         padding-top: 0;
+        margin-bottom: 94px;
         .slider-box1 {
             &::before {
                 content: "";
@@ -61,8 +62,8 @@
         align-items: center;
         max-width: 660px;
         top: 300px;
-        left: 124px;
-        padding: 0 40px;
+        left: 50%;
+        transform: translateX(-50%);
         h1 {
             font-size: 105px;
             line-height: 95px;
@@ -87,6 +88,76 @@
                 height: 90px;
                 left: 190px;
                 top: 210px;
+            }
+        }
+    }
+
+    .feature-item {
+        width: 50%;
+        &:nth-child(2) {
+            margin-bottom: 12px;
+        }
+        &:nth-child(2),
+        &:nth-child(4) {
+            margin-top: 176px;
+        }
+    }
+
+    .feature-item-wrap { 
+        max-width: 280px;
+        .feature-headline {
+            font-size: 1.500em;
+            font-weight: 700;
+        } 
+        .feature-text {
+            font-size: 1.125em;
+        }
+        .number {
+            margin-bottom: 38px;
+        }
+    }  
+    
+    .features {
+        margin-bottom: 174px;
+    }
+    .portfolio {
+        .wrapper {
+            margin: 0;
+            .headline {
+                margin-left: 40px;
+            }
+            .portfolio-nav {
+                justify-content: space-between;
+                padding-top: 52px;
+                padding-bottom: 46px;
+                margin: 0 40px;
+            }
+        }
+        .portfolio-item {
+            width: 210px;
+            a {
+                font-size: 1.375em;
+            }
+        }
+        .projects-photo {
+            width: 100%;
+            &.two {
+                img {
+                    width: 604px;
+                    height: 612px;
+                }
+            }
+            &.four {
+                display: none;
+            }
+            .design,
+            .rotate,
+            .arrow,
+            .plus {
+                display: none;                
+            }
+            .second-double {
+                display: block;
             }
         }
     }
