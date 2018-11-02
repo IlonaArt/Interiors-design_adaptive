@@ -2,11 +2,16 @@
     .wrapper {
         max-width: 768px;
     }
+
+    img {
+        overflow: hidden;
+    }
     
     .main-header {
         padding-top: 0;
         margin-bottom: 94px;
         .slider-box1 {
+            overflow: hidden;
             &::before {
                 content: "";
                 position: absolute;
@@ -120,7 +125,9 @@
     .features {
         margin-bottom: 174px;
     }
+
     .portfolio {
+        margin-bottom: 256px;
         .wrapper {
             margin: 0;
             .headline {
@@ -133,33 +140,108 @@
                 margin: 0 40px;
             }
         }
-        .portfolio-item {
-            width: 210px;
-            a {
-                font-size: 1.375em;
+    }
+
+    .portfolio-item {
+        width: 210px;
+        a {
+            font-size: 1.375em;
+            &.current-ref,
+            &:hover,
+            &:active {
+                border-bottom: none;
+                font-weight: 300;
             }
         }
-        .projects-photo {
-            width: 100%;
-            &.two {
-                img {
-                    width: 604px;
-                    height: 612px;
-                }
-            }
-            &.four {
+    }
+    .projects-photo {
+        height: 612px;
+        &:hover {
+            a {
                 display: none;
             }
-            .design,
-            .rotate,
-            .arrow,
-            .plus {
-                display: none;                
-            }
-            .second-double {
-                display: block;
+        }
+        img {
+            height: 612px;
+        }
+        &.one {
+            width: 5%;
+            margin-right: auto;
+        }
+        &.two {
+        width: 78%;  
+            img {
+                width: 100%;
             }
         }
+        &.three {
+            width: 5%;
+            margin-left: auto;
+        }
+        &.four {
+            display: none;
+        }
+        .design,
+        .rotate,
+        .arrow,
+        .overlay {
+            display: none;                
+        }
+        .second-double {
+            display: block;
+            font-size: 1.250em;
+            color: @headline-color;
+            font-weight: 600;
+            text-align: center;
+            padding-top: 42px;
+        }
+    }
+
+    .projects-slider {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .services {
+        .wrapper {
+            margin: 0;
+        }
+        .headline,
+        .services-nav,
+        .service-col1,
+        .service-col2 {
+            margin: 0 40px;
+        }
+        .services-nav {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: stretch;
+            padding-right: 0;
+        }
+    }
+
+    .services-wrap {
+        flex-direction: column;
+        padding-top: 63px;
+    }
+
+    .services-item {
+        max-width: 286px;
+        margin-bottom: 78px;
+        &.one {
+            margin-right: 67px;
+        }
+        &.three {
+            padding-left: 0;
+            margin-right: 43px;
+        }
+        &.five {
+            margin-right: 135px;
+        }
+    }
+
+    .services-ref {
+        font-size: 1.375em;
     }
 
     .service-col2 {
@@ -168,5 +250,8 @@
 
     .service-column {
         flex-direction: row;
+        .services-photo {
+            margin-bottom: 35px;
+        }
     }
 }
